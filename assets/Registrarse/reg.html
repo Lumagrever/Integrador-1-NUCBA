@@ -45,9 +45,13 @@
 
                     <div class="forms-container">
 
-                        <h1>Selecciona tu casa de Hogwarts</h1>
+                        <h1>Sala de Registro</h1>
 
-                        <div class="hogwarts-house"> 
+                        <p>¡<b>Seleccioná tu casa de Hogwarts</b> para acceder a <b>mágicos descuentos</b> semanales!</p>
+
+
+
+                        <!-- <div class="hogwarts-house"> 
                             <div class="form-radio">
                         <label for="gryffindor">
                         <input type="radio" id="gryffindor" value="gryffindor" name="casa" class="gryffindor">
@@ -84,39 +88,62 @@
 
                             </div>
 
+                            -->
+
+                            <div class="hogwarts-house"> 
+                                
+                                <div class="form-checkbox">
+                                    <input id="gryffindor" type="checkbox"/>
+                                    <label for="gryffindor">Gryffindor</label>
+                                </div>
+
+                                <div class="form-checkbox">
+                                    
+                                    <input id="hufflepuff" type="checkbox"/>
+                                    <label for="hufflepuff">Hufflepuff</label>
+
+                                </div>
+
+                                <div class="form-checkbox">
+                                    <input id="ravenclaw" type="checkbox"/>
+                                    <label for="ravenclaw">Ravenclaw</label>
+                                </div>
+                                
+                                <div class="form-checkbox">
+                                    <input id="slytherin" type="checkbox"/>
+                                    <label for="slytherin">Slytherin</label></div>
+                                </div>
+
                         <label for="nombre">
-                        <input type="text" placeholder="Nombre" class="input-text">
+                        <input type="text" placeholder="Nombre" class="input-text" required>
                         </label>
 
                         <label for="apellido">
-                        <input type="text" placeholder="Apellido" class="input-text">
+                        <input type="text" placeholder="Apellido" class="input-text" required>
                         </label>
 
                         <label for="domicilio">
-                        <input type="text" placeholder="Domicilio y Número" class="input-text">
+                        <input type="text" placeholder="Domicilio" class="input-text" required>
                         </label>
 
                         <label for="correo">
-                        <input type="email" placeholder="Correo Electronico" class="input-text">
+                        <input type="email" placeholder="Correo Electrónico" class="input-text" required>
                         </label>
 
                         <label for="contraseña">
-                        <input type="password" placeholder="Contraseña" class="input-text">
-                        </label>
-
-                        <label for="promo">
-                        <input type="checkbox" name="promo" id="promo">
-                        Recibí todas las noticias de nuestras promos y descuentos semanales en tu correo
-                        </label>
+                        <input type="password" placeholder="Contraseña" class="input-text" required>
+                        </label>   
 
                         <div class="button-container">
-
+                            <a href="/index.html">
+                            <button>Leviosa</button>
+                            </a>
 
                         </div>
 
                     </div>
 
-                    <div class="hegwith-delivery">
+                    <div id="hegwid-delivery">
 
                         <img src="/assets/elements/Hedwig - Delivery.png" alt="">
 

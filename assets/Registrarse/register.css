@@ -134,28 +134,36 @@ body {
     box-shadow: 0 4px 10px 0 var(--blackshadow);
     padding: 3rem;
     width: 800px;
-    height: 500px;
+    height: 550px;
     gap: 5px;
     
 }
 
 .forms-container h1{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
-.forms-container h1{
-    font-size: 1.5rem;
+.forms-container p{
+    font-size: 1.2rem;
     text-align: center;
 }
+
+.forms-container b{
+    color: var(--naranja);
+}
+
+
 
 .hogwarts-house {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    gap: 25px;
+    padding: 10px;
 }
 
-
+/*
 .form-radio {
     border: 2px solid;
     padding: 3px;    
@@ -166,8 +174,63 @@ label {
     color: var(--azul);
     font-size: 1.3rem;
     padding: 3px;
+}*/
+
+.form-checkbox {
+    text-decoration: overline 2px var(--blackshadow);
 }
 
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] > :nth-child(5) {
+    
+}
+
+label[for=gryffindor] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+label[for=hufflepuff] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+label[for=ravenclaw] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+label[for=slytherin] {
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="checkbox"]:checked + label[for=gryffindor] {
+	color: var(--beige);
+	font-weight: bold;
+    background: #AE0001;
+}
+
+input[type="checkbox"]:checked + label[for=hufflepuff] {
+	color: var(--azul);
+	font-weight: bold;
+    background: #FFDB00;
+}
+
+input[type="checkbox"]:checked + label[for=ravenclaw] {
+	color: var(--beige);
+	font-weight: bold;
+    background: #222F5B;
+}
+
+input[type="checkbox"]:checked + label[for=slytherin] {
+	color: var(--beige);
+	font-weight: bold;
+    background: #2A623D;
+}
 
 .hufflepuff {
    
@@ -182,19 +245,49 @@ label {
 }
 
 .input-text {
+    font-size: 1rem;
     padding: 10px;
+    border: 2px solid var(--azul);
+    width: 250px;
 }
 
 .input-text:hover {
-    background-color: var(--azul);
-
+    background-color: var(--beige);
 }
 
 .input-text:hover::placeholder{
+    color: var(--azul);
+}
+
+.button-container a {
     color: var(--beige);
 }
 
-.hegwith-delivery img {
+button {
+    background-color: var(--naranja);
+    padding: 10px 25px 10px 25px;
+    cursor: pointer;
+    font-family: var(--big-font);
+    font-size: 1.5rem;
+}
+
+button:hover {
+    background-color: var(--azul);
+    color: var(--beige);
+    transition: 300ms;
+    box-shadow: 0 4px 10px 0 var(--blackshadow);
+}
+
+#hegwid-delivery img {
     height: 400px;
-    object-fit: contain;
+    transition: 2s ease-in-out;
+    transform: translate( 100px, 100px);
+    -webkit-transform: translate(100px,100px);
+    -o-transform: translate(100px,100px); 
+    -moz-transform: translate(100px,100px);
+}
+
+#hegwid-delivery img::after {
+transition: 4s;
+
 }
