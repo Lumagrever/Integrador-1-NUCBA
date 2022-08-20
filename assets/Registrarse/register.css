@@ -132,9 +132,11 @@ body {
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 4px 10px 0 var(--blackshadow);
-    padding: 4rem;
+    padding: 3rem;
     width: 800px;
-    height: 400px;
+    height: 500px;
+    gap: 5px;
+    
 }
 
 .forms-container h1{
@@ -150,6 +152,46 @@ body {
 .hogwarts-house {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+
+.form-radio {
+    border: 2px solid;
+    padding: 3px;    
+}
+
+label {
+    font-family: var(--big-font);
+    color: var(--azul);
+    font-size: 1.3rem;
+    padding: 3px;
+}
+
+
+.hufflepuff {
+   
+}
+
+.ravenclaw {
+
+}
+
+.slytherin {
+
+}
+
+.input-text {
+    padding: 10px;
+}
+
+.input-text:hover {
+    background-color: var(--azul);
+
+}
+
+.input-text:hover::placeholder{
+    color: var(--beige);
 }
 
 .hegwith-delivery img {
