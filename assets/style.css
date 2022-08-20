@@ -240,7 +240,7 @@ color: beige;
     align-content: center;
 }
 
-/*VERIFICAR
+/*
 .up-page{
     width: 100px;
     height: 100px;
@@ -336,7 +336,7 @@ color: beige;
     height: 220px;
     object-fit: cover;
 }
-
+                                    /*cambiar y mejorar las class para simplificar*/
 .card18 img {
     width: 235px;
     height: 220px;
