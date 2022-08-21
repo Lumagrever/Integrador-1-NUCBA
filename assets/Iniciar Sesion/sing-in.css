@@ -132,11 +132,12 @@ body {
     box-shadow: 0 4px 10px 0 var(--blackshadow);
     padding: 4rem;
     width: 800px;
-    height: 400px; 
+    height: 350px; 
+    gap: 1.5rem;
 }
 
 .forms-container h1{
-    font-size: 1.6rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -168,9 +169,19 @@ body {
     color: var(--beige);
 }
 
-#mensaje p {
-    font-size: 1rem;
+#mensajes p {
+    font-size: 0.9rem;
     font-weight: bold;
+    padding: 2px;
+}
+
+#mensajes a{
+    cursor: pointer;
+}
+
+#mensajes b:hover{
+    color: var(--azul);
+    cursor: pointer
 }
 
 button {
@@ -188,29 +199,32 @@ button:hover {
     box-shadow: 0 4px 10px 0 var(--blackshadow);
 }
 
-#hegwid-delivery img {
+#burger-logo {
+    display: flex;
+    align-items: center;
+}
+
+#burger-logo img {
     height: 250px;
     animation: hedwig 6s infinite ease-in-out ;
-    
 }
     
+
 @keyframes hedwig {
     0% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, -10%);
     }
-    25% {
-        transform: translate(5%, 30%) scale(1.2);
-    }
+
+    
     50% {
-        transform: translate(15%, 150%) scale(0.7);    /* 970px de media queries deberia ser*/
+        transform: translate(0, 10%) ;    /*970px de media queries deberia ser*/
     }
-    75% {
-        transform: translate(20%, 30%) scale(1.2);
-    }
+
+
     100% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, -10%);
     }
 
   }
-    
+
 

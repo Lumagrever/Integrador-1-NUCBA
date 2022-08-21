@@ -311,8 +311,8 @@ color: beige;
     font-size: 1.5rem;
     background-color: var(--blackshadow);
     border-style: solid var(--azul);
-    border-radius: 5px;
     padding: 5px;
+    border-radius: 3px;
 }
 
 .btn:hover {
