@@ -122,21 +122,18 @@ body {
     flex-direction: row;
     align-content: center;
     gap: 2rem;
-    
 }
 
 .forms-container {
     display: flex;
-    width: 100%;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 4px 10px 0 var(--blackshadow);
-    padding: 3rem;
+    padding: 4rem;
     width: 800px;
     height: 550px;
-    gap: 5px;
-    
+    gap: 5px; 
 }
 
 .forms-container h1{
@@ -153,8 +150,6 @@ body {
     color: var(--naranja);
 }
 
-
-
 .hogwarts-house {
     display: flex;
     flex-direction: column;
@@ -162,19 +157,6 @@ body {
     gap: 25px;
     padding: 10px;
 }
-
-/*
-.form-radio {
-    border: 2px solid;
-    padding: 3px;    
-}
-
-label {
-    font-family: var(--big-font);
-    color: var(--azul);
-    font-size: 1.3rem;
-    padding: 3px;
-}*/
 
 .form-checkbox {
     text-decoration: overline 2px var(--blackshadow);
@@ -184,28 +166,28 @@ input[type="checkbox"] {
 	display: none;
 }
 
-input[type="checkbox"] > :nth-child(5) {
-    
-}
-
 label[for=gryffindor] {
     cursor: pointer;
     padding: 10px;
+    font-size: 20px;
 }
 
 label[for=hufflepuff] {
     cursor: pointer;
     padding: 10px;
+    font-size: 20px;
 }
 
 label[for=ravenclaw] {
     cursor: pointer;
     padding: 10px;
+    font-size: 20px;
 }
 
 label[for=slytherin] {
     cursor: pointer;
     padding: 10px;
+    font-size: 20px;
 }
 
 input[type="checkbox"]:checked + label[for=gryffindor] {
@@ -232,18 +214,6 @@ input[type="checkbox"]:checked + label[for=slytherin] {
     background: #2A623D;
 }
 
-.hufflepuff {
-   
-}
-
-.ravenclaw {
-
-}
-
-.slytherin {
-
-}
-
 .input-text {
     font-size: 1rem;
     padding: 10px;
@@ -263,6 +233,11 @@ input[type="checkbox"]:checked + label[for=slytherin] {
     color: var(--beige);
 }
 
+#mensaje p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 button {
     background-color: var(--naranja);
     padding: 10px 25px 10px 25px;
@@ -279,15 +254,28 @@ button:hover {
 }
 
 #hegwid-delivery img {
-    height: 400px;
-    transition: 2s ease-in-out;
-    transform: translate( 100px, 100px);
-    -webkit-transform: translate(100px,100px);
-    -o-transform: translate(100px,100px); 
-    -moz-transform: translate(100px,100px);
+    height: 250px;
+    animation: hedwig 6s infinite ease-in-out ;
+    
 }
+    
+@keyframes hedwig {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    25% {
+        transform: translate(5%, 30%) scale(1.2);
+    }
+    50% {
+        transform: translate(15%, 150%) scale(0.7);    /* 970px de media queries deberia ser*/
+    }
+    75% {
+        transform: translate(20%, 30%) scale(1.2);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
 
-#hegwid-delivery img::after {
-transition: 4s;
+  }
+    
 
-}
