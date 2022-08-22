@@ -58,7 +58,6 @@ a:visited {
 
 .logo img {
     height: 100px;
-    padding-right: 150px;
 }
 
 .navbar, .navbar-li {
@@ -331,56 +330,37 @@ color: beige;
     font-size: 2rem;
 }
 
-.card17 img {
+.img-cover img {
     width: 235px;
     height: 220px;
     object-fit: cover;
 }
 
-.card18 img {
-    width: 235px;
-    height: 220px;
-    object-fit: cover;
-}
-
-.card19 img {
+.img-contain img {
     width: 235px;
     height: 220px;
     object-fit: contain;
-}
-
-.card20 img {
-    width: 235px;
-    height: 220px;
-    object-fit: contain;
-}
-
-.card21 img {
-    width: 350px;
-    height: 230px;
-    object-fit: contain;
-}
-
-.card21 img:hover{
-    transform: none;
 }
 
 .card21:hover {
-    transform: scale(1.1);
-    transition: 300ms;
+    box-shadow: 0 4px 10px 0 #AE0001;
 }
 
-.card22 img {
+.card22:hover {
+    box-shadow: 0 4px 10px 0 #1b7238;;
+}
+
+.promo-card img {
     width: 350px;
     height: 230px;
     object-fit: contain;
 }
 
-.card22 img:hover {
+.promo-card img:hover{
     transform: none;
 }
 
-.card22:hover {
+.promo-card:hover {
     transform: scale(1.1);
     transition: 300ms;
 }
@@ -418,7 +398,6 @@ color: beige;
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-top: solid var(--blackshadow);
-    border-bottom: solid var(--blackshadow);
     padding: 10px 0 10px 0;
 }
 
@@ -483,11 +462,13 @@ color: beige;
 
 .div-footer-container{
     padding: 10px 0 10px 0;
+    background-color: cornsilk;
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
+
 }
 
 .footer-container b {
