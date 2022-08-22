@@ -480,4 +480,34 @@ color: beige;
     transition: 300ms;
 }
 
+/* Media Queries 920*/
 
+@media (max-width: 920px) {
+
+    .navbar ul {
+        background-color: var(--beige);
+        width: 100%;
+        height: calc(100vh - 100px);    /* Calculamos el 100% del vh menos los px que mide el header */
+        position: absolute;
+        top: 100px;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;                    /* Esto es lo que se muestra al desplegar el menú hamburguesa*/
+        align-items: center;
+        transform: translateX(200%);
+        transition: 0.4s ease-in-out;
+        text-align: center;
+    }
+
+    .navbar i {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    #menu-toggle:checked + .navbar-li {
+        transform: translateX(0%);
+        opacity: 0.95;
+    }
+
+}
