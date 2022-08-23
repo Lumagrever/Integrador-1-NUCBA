@@ -239,14 +239,11 @@ color: beige;
     align-content: center;
 }
 
-/*VERIFICAR
+/*
 .up-page{
     width: 100px;
     height: 100px;
     object-fit: contain;
-    z-index: 10;
-    position: fixed;
-    padding-left: 1670px;
 }
 
 .up-page img{
@@ -480,9 +477,9 @@ color: beige;
     transition: 300ms;
 }
 
-/* Media Queries 920*/
+/* Media Queries 960*/
 
-@media (max-width: 920px) {
+@media (max-width: 960px) {
 
     .navbar ul {
         background-color: var(--beige);
@@ -510,5 +507,246 @@ color: beige;
         transform: translateX(0%);
         opacity: 0.95;
     }
+
+}
+
+/* MEDIA QUERIES 576px */
+
+@media (max-width: 576px) {
+
+    
+/* HEADER - MEDIA QUERIES 576px*/
+
+    .header {
+        padding: 0 15px 0 15px;
+    }
+
+    .logo img {
+        height: 75px;
+    }
+
+/* HERO - MEDIA QUERIES 576px */
+
+    .new-burger-hero {
+        height: 250px;
+    }
+
+    .new-burger-hero img {
+        height: 260px;
+    }
+
+    .section-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-image: none;
+    }
+
+    .title-hero {
+        padding-bottom: 40px;
+        padding-right: 0px;
+    }
+    
+    .title-hero h1 {
+        font-size: 1.2rem;
+    }
+    
+    .title-hero h2 {
+        font-size: 1rem;
+    }
+    
+    .new-burger-text h3 {
+        font-size: 1.5rem;
+    }
+    
+    .new-burger-text h4 {
+        font-family: var(--potter-font);
+        font-size: 2.5rem;
+    }
+
+/* ADVENTAGES - MEDIA QUERIES 576px */
+
+.div-adventage-section .adventage-section {
+    padding-top: 25px;
+ }
+ 
+ .adventage-title {
+     display: flex;
+     padding-bottom: 20px;
+ }
+ 
+ .adventage-title h4 {
+     font-size: 1.6rem;
+     text-decoration: overline var(--azul);
+ }
+ 
+ .adventages-box {
+     gap: 15px;
+ }
+ 
+ .adventages img{
+     width: 200px;
+     height: 150px;
+ }
+ 
+ .adventages p {
+     font-size: 1rem;
+ }
+
+ /* MENU - MEDIA QUERIES 576px */
+
+.title-menu{
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-menu h5 {
+    font-family: var(--big-font);
+    font-size: 2rem;
+}
+
+.div-menu-container{
+    padding-top: 0px;
+}
+
+.article-menu-burger{
+    padding-top: 25px;
+    gap: 1rem;
+}
+
+.card-burger {
+    gap: 5px;
+    padding: 2px 2px 5px 2px;
+}
+
+.card-burger:hover {
+    box-shadow: 0 4px 10px 0 var(--naranja);
+}
+
+.name-burger {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+.card-burger img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card1 img {
+    object-fit: contain;
+}
+
+.img-cover img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.img-contain img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.promo-card img {
+    width: 250px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.card21:hover {
+    box-shadow: 0 4px 10px 0 #AE0001;
+}
+
+.card22:hover {
+    box-shadow: 0 4px 10px 0 #1b7238;;
+}
+
+.four-burgers {
+    font-size: 1.2rem;
+}
+
+.promo-card-container {
+    gap: 1.8rem;
+}
+
+/* CONTACT/FOOTER - MEDIA QUERIES 576px */
+
+.section-contact-container {
+    padding-top: 25px;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    border-top: solid var(--blackshadow);
+    padding: 5px 0 5px 0;
+}
+
+.section-container span{
+    font-size: 1.5rem;
+}
+
+.contact-container {
+    align-items: center;
+}
+
+.contact-container li {
+    padding-bottom: 0.2rem;
+}
+
+.contact-container b {
+    font-size: 1rem;
+}
+
+.social-icon {
+    gap: 15px;
+    
+}
+
+.social-icon a {
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location iframe {
+    width: 220px;
+    height: 180px;
+}
+
+.div-footer-container{
+    padding: 5px 0 5px 0;
+    background-color: cornsilk;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container p {
+    font-size: 0.8rem;
+    text-align: center;
+}
 
 }
