@@ -117,6 +117,15 @@ color: beige;
 
 /* Hero */
 
+.no-select-text {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none; 
+            user-select: none; 
+}
+
 .div-section-hero {
     padding-top: 50px;
 }
@@ -438,6 +447,37 @@ color: beige;
     color: var(--naranja);
     transition: 300ms;
 }
+
+.go-home {
+    display: flex;
+    justify-content: center;
+}
+
+.go-home a {
+    object-fit: contain;
+}
+
+.go-home img {
+    height: 100px;
+    animation: snitch-levitation 3s infinite ease-in-out ;
+}
+
+@keyframes snitch-levitation {
+    0% {
+        transform: translate(0%, -10%);
+    }
+
+    
+    50% {
+        transform: translate(0, 10%) ;    /*970px de media queries deberia ser*/
+    }
+
+
+    100% {
+        transform: translate(0%, -10%);
+    }
+
+  }
 
 .location-container {
     display: flex;

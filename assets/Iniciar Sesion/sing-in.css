@@ -205,11 +205,11 @@ button:hover {
 
 #burger-logo img {
     height: 250px;
-    animation: hedwig 6s infinite ease-in-out ;
+    animation: burger-levitation 3s infinite ease-in-out ;
 }
     
 
-@keyframes hedwig {
+@keyframes burger-levitation {
     0% {
         transform: translate(0%, -10%);
     }
