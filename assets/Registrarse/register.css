@@ -320,7 +320,7 @@ button:hover {
 }
 
 .forms-container {
-    padding: 5rem;
+    padding: 5rem 1rem;
     max-height: 550px;
     gap: 5px; 
 }
