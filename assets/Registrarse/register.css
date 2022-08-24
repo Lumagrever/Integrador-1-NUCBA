@@ -58,7 +58,6 @@ a:visited {
 
 .logo img {
     height: 100px;
-    padding-right: 150px;
 }
 
 .navbar, .navbar-li {
@@ -107,7 +106,7 @@ body {
 }
 
 .main-register{
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,12 +115,12 @@ body {
 }
 
 .register-container {
-    width: 850px;
+    width: 800px;
     height: 430px;
     display: flex;
     flex-direction: row;
     align-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .forms-container {
@@ -144,6 +143,7 @@ body {
 .forms-container p{
     font-size: 1.2rem;
     text-align: center;
+    font-weight: bold;
 }
 
 .forms-container b{
@@ -261,21 +261,145 @@ button:hover {
     
 @keyframes hedwig {
     0% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, 0%) scale(0.8);
     }
     25% {
         transform: translate(5%, 30%) scale(1.2);
     }
     50% {
-        transform: translate(15%, 150%) scale(0.7);    /* 970px de media queries deberia ser*/
+        transform: translate(10%, 150%) scale(0.7);    /* 970px de media queries deberia ser*/
     }
     75% {
-        transform: translate(20%, 30%) scale(1.2);
+        transform: translate(15%, 30%) scale(1.2);
     }
     100% {
-        transform: translate(0%, 0%);
+        transform: translate(0%, 0%) scale(0.8); 
     }
 
   }
-    
 
+  /* Media Queries 960*/
+
+@media (max-width: 960px) {
+
+    /* Menu-Hamburguesa-Header*/
+
+.navbar ul {
+    background-color: var(--beige);
+    height: calc(100vh - 100px);    /* Calculamos el 100% del vh menos los px que mide el header */
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;                    /* Esto es lo que se muestra al desplegar el menú hamburguesa*/
+    align-items: center;
+    transform: translateX(-200%);
+    transition: 0.4s ease-in-out;
+    text-align: center;
+    display: flex;
+}
+
+.navbar i{
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#menu-toggle:checked + .navbar-li {
+    transform: translateX(0%);
+    opacity: 0.95;
+}
+
+
+
+
+}
+
+
+
+/* MEDIA QUERIES 576px */
+
+@media (max-width: 576px) {
+
+    .header {
+        padding: 0 15px 0 15px;
+    }
+
+    .logo img {
+        height: 75px;
+    }
+    
+    .main-register{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .register-container {
+        width: 355px;
+    }
+    
+    .forms-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 4px 10px 0 var(--blackshadow);
+        padding: 5rem 2rem 5rem 2rem;
+        max-height: 550px;
+        gap: 5px; 
+    }
+    
+    .forms-container h1{
+        font-size: 1.5rem;
+    }
+    
+    .forms-container p{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    
+    label[for=gryffindor] {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    label[for=hufflepuff] {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    label[for=ravenclaw] {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    label[for=slytherin] {
+        cursor: pointer;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    
+    .input-text {
+        max-width: 200px;
+        height: 1rem;
+    }
+    
+    #mensaje p {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    #hegwid-delivery {
+        display: none;
+    }
+
+}
