@@ -76,7 +76,6 @@ a:visited {
     font-family: var(--nuni-font);
     color: var(--azul);
     font-size: 23px;
-    padding: 5px;
     border-radius: 5px;
 }
 
@@ -89,6 +88,8 @@ a:visited {
 .navbar li:nth-child(4){
     background-color: var(--naranja);
     border-radius: 5px;
+    min-width: 150px;
+    text-align: center;
 }
 
 .navbar li:nth-child(4):hover{
@@ -167,6 +168,7 @@ color: beige;
 
 .title-hero h2 {
     font-size: 1.1rem;
+    text-align: center;
 }
 
 .new-burger-text h3 {
@@ -179,6 +181,7 @@ color: beige;
 .new-burger-text h4 {
     font-family: var(--potter-font);
     font-size: 4.5rem;
+    text-align: center;
 }
 
 /*Adventages*/

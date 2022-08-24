@@ -107,7 +107,7 @@ body {
 }
 
 .main-register{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -132,7 +132,7 @@ body {
     box-shadow: 0 4px 10px 0 var(--blackshadow);
     padding: 4rem;
     width: 800px;
-    height: 550px;
+    height: 590px;
     gap: 5px; 
 }
 
