@@ -435,6 +435,7 @@ color: beige;
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding-bottom: 10px;
     
 }
 
