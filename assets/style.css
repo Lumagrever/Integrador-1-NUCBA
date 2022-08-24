@@ -327,12 +327,6 @@ color: beige;
     font-size: 2rem;
 }
 
-.img-cover img {
-    width: 235px;
-    height: 220px;
-    object-fit: cover;
-}
-
 .img-contain img {
     width: 235px;
     height: 220px;
@@ -481,6 +475,8 @@ color: beige;
 
 @media (max-width: 960px) {
 
+    /* Menu-Hamburguesa-Header*/
+
     .navbar ul {
         background-color: var(--beige);
         height: calc(100vh - 100px);    /* Calculamos el 100% del vh menos los px que mide el header */
@@ -507,6 +503,215 @@ color: beige;
         transform: translateX(0%);
         opacity: 0.95;
     }
+
+    /* HEADER - MEDIA QUERIES 576px*/
+
+    .header {
+        padding: 0 15px 0 15px;
+    }
+
+    .logo img {
+        height: 75px;
+    }
+
+/* HERO - MEDIA QUERIES 576px */
+
+    .new-burger-hero {
+        height: 250px;
+    }
+
+    .new-burger-hero img {
+        height: 280px;
+    }
+
+    .section-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        background-size: 830px;
+    }
+
+    .title-hero {
+        padding-top: 1rem;
+        padding-bottom: 40px;
+        padding-right: 0px;
+    }
+    
+    .title-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .title-hero h2 {
+        font-size: 1.2rem;
+    }
+    
+    .new-burger-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .new-burger-text h4 {
+        font-size: 4rem;
+    }
+
+/* ADVENTAGES - MEDIA QUERIES 576px */
+
+.div-adventage-section .adventage-section {
+    padding-top: 30px;
+ }
+ 
+ .adventage-title {
+     display: flex;
+     padding-bottom: 20px;
+ }
+ 
+ .adventage-title h4 {
+     font-size: 2rem;
+     text-decoration: overline var(--azul);
+ }
+ 
+ .adventages-box {
+     gap: 15px;
+ }
+ 
+ .adventages img{
+     width: 230px;
+     height: 180px;
+ }
+ 
+ .adventages p {
+     font-size: 1.2rem;
+ }
+
+ /* MENU - MEDIA QUERIES 576px */
+
+.title-menu{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.title-menu h5 {
+    font-family: var(--big-font);
+    font-size: 3rem;
+}
+
+.div-menu-container{
+    padding-top: 0px;
+}
+
+.article-menu-burger{
+    padding-top: 25px;
+    gap: 1.5rem;
+}
+
+.card-burger {
+    gap: 5px;
+    padding: 4px 4px 8px 4px;
+}
+
+.name-burger {
+    font-size: 2.2rem;
+}
+
+.btn {
+    font-size: 1.4rem;
+}
+
+.price {
+    font-size: 1.7rem;
+}
+
+.card-burger img{
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.img-contain img {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.promo-card img {
+    width: 270px;
+    height: 170px;
+    object-fit: contain;
+}
+
+.card21:hover {
+    box-shadow: 0 4px 10px 0 #AE0001;
+}
+
+.card22:hover {
+    box-shadow: 0 4px 10px 0 #1b7238;;
+}
+
+.four-burgers {
+    font-size: 1.3rem;
+}
+
+.promo-card-container {
+    gap: 2rem;
+}
+
+/* CONTACT/FOOTER - MEDIA QUERIES 576px */
+
+.section-container span{
+    font-size: 1.8rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container li {
+    padding-bottom: 0.5rem;
+}
+
+.contact-container b {
+    font-size: 1rem;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    
+}
+
+.social-icon a {
+    font-size: 2rem;
+    color: var(--azul);
+}
+
+.location {
+    box-shadow: var(--naranja) 1.95px 1.95px 2.6px;
+}
+
+.div-footer-container{
+    padding: 10px 0 10px 0;
+    background-color: cornsilk;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer-container p {
+    font-size: 0.9rem;
+    text-align: center;
+}
 
 }
 
@@ -647,12 +852,6 @@ color: beige;
     object-fit: contain;
 }
 
-.img-cover img {
-    width: 200px;
-    height: 150px;
-    object-fit: cover;
-}
-
 .img-contain img {
     width: 200px;
     height: 150px;
@@ -690,7 +889,7 @@ color: beige;
 .section-container {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     border-top: solid var(--blackshadow);
     padding: 5px 0 5px 0;
@@ -698,6 +897,7 @@ color: beige;
 
 .section-container span{
     font-size: 1.5rem;
+    padding-top: 5px;
 }
 
 .contact-container {
@@ -726,6 +926,7 @@ color: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 .location iframe {
