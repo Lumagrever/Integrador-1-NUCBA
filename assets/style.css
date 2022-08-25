@@ -884,8 +884,10 @@ color: beige;
     object-fit: cover;
 }
 
-.card1 img {
-    object-fit: contain;
+.burger-contain img {
+        width: 200px;
+        height: 150px;
+        object-fit: contain;
 }
 
 .img-contain img {
