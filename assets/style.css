@@ -39,7 +39,7 @@ a:visited {
     color: black;
 }
 
-/* Header y Nav*/
+/* Header y Nav */
 
 .header {
     max-width: 1300px;
@@ -193,7 +193,7 @@ color: beige;
     text-align: center;
 }
 
-/*Adventages*/
+/* Adventages */
 
 .div-adventage-section .adventage-section {
    padding-top: 50px;
@@ -242,7 +242,7 @@ color: beige;
     box-shadow: var(--naranja) 1.95px 1.95px 2.6px;
 }
 
-/*Menu Burger*/
+/* Menu Burger */
 
 .title-menu{
     padding-top: 50px;
@@ -250,18 +250,6 @@ color: beige;
     justify-content: center;
     align-content: center;
 }
-
-/*
-.up-page{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-}
-
-.up-page img{
-    width: 180px;
-}
-*/
 
 .title-menu h5 {
     font-family: var(--big-font);
@@ -283,6 +271,8 @@ color: beige;
     justify-content: center;
     gap: 3rem;
 }
+
+/* Cards de productos */
 
 .card-burger {
     display: flex;
@@ -306,7 +296,7 @@ color: beige;
 
 .card-burger img:hover {
     transform: scale(1.1);
-    transition: 300ms;
+    transition: 300ms ease-in;
 }
 
 .name-burger {
@@ -344,6 +334,8 @@ color: beige;
     height: 220px;
     object-fit: contain;
 }
+
+/* Cards de productos promocionales */
 
 .card21:hover {
     box-shadow: 0 4px 10px 0 #AE0001;
@@ -389,7 +381,7 @@ color: beige;
     gap: 3rem;
 }
 
-/*Contact and Footer*/
+/* Contact and Footer */
 
 .section-contact-container {
     padding-top: 50px;
@@ -459,7 +451,7 @@ color: beige;
 }
 
 .go-home img {
-    height: 100px;
+    height: 90px;
     animation: snitch-levitation 3s infinite ease-in-out ;
 }
 
@@ -470,7 +462,7 @@ color: beige;
 
     
     50% {
-        transform: translate(0, 10%) ;    /*970px de media queries deberia ser*/
+        transform: translate(0, 10%) ;
     }
 
 
@@ -515,11 +507,11 @@ color: beige;
     transition: 300ms;
 }
 
-/* Media Queries 960*/
+/* Media Queries 960 */
 
 @media (max-width: 960px) {
 
-    /* Menu-Hamburguesa-Header*/
+    /* Menu-Hamburguesa-Header */
 
     .navbar ul {
         background-color: var(--beige);
@@ -548,7 +540,7 @@ color: beige;
         opacity: 0.95;
     }
 
-    /* HEADER - MEDIA QUERIES 576px*/
+    /* HEADER - MEDIA QUERIES 576px */
 
     .header {
         padding: 0 15px 0 15px;
