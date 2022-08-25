@@ -300,8 +300,8 @@ button:hover {
 }
 
 #burger-logo img {
-    height: 160px;
-    animation: burger-levitation 3s infinite ease-in-out ;
+    height: 120px;
+    animation: burger-levitation 4s infinite ease-in-out ;
 }
 
 
