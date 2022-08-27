@@ -132,8 +132,7 @@ body {
     align-items: center;
     box-shadow: 0 4px 10px 0 var(--blackshadow);
     padding: 4rem;
-    width: 800px;
-    height: 590px;
+    height: 520px;
     gap: 5px; 
 }
 
@@ -154,16 +153,18 @@ body {
 
 .hogwarts-house {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 25px;
+    gap: 40px;
     padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Checkbox con estilo de seleccion de texto */
 
 .form-checkbox {
-    text-decoration: overline 2px var(--blackshadow);
+    padding: 5px;
 }
 
 input[type="checkbox"] {
@@ -174,24 +175,32 @@ label[for=gryffindor] {
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 3px #AE0001;
 }
 
 label[for=hufflepuff] {
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 3px #FFDB00;
 }
 
 label[for=ravenclaw] {
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 3px #222F5B;
 }
 
 label[for=slytherin] {
     cursor: pointer;
     padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    border-bottom: solid 3px #2A623D;;
 }
 
 input[type="checkbox"]:checked + label[for=gryffindor] {
@@ -333,7 +342,7 @@ button:hover {
 
 .forms-container {
     padding: 5rem 1rem;
-    max-height: 550px;
+    max-height: 460px;
     gap: 5px; 
 }
 
@@ -409,18 +418,22 @@ label[for=slytherin] {
     /* Formulario de registro - 576px */
     
     .forms-container {
-        padding: 5rem 2rem 5rem 2rem;
-        max-height: 550px;
+        padding: 5rem 0.5rem;
+        max-height: 430px;
         gap: 5px; 
     }
     
     .forms-container h1{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .forms-container p{
         font-size: 1rem;
         font-weight: bold;
+    }
+
+    .hogwarts-house {
+        gap: 20px;
     }
     
     
@@ -451,6 +464,10 @@ label[for=slytherin] {
     .input-text {
         max-width: 200px;
         height: 1rem;
+    }
+
+    #mensaje {
+        padding: 0 0.5rem;
     }
     
     #mensaje p {

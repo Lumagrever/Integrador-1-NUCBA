@@ -245,7 +245,7 @@ color: beige;
 /* Menu Burger */
 
 .title-menu{
-    padding-top: 50px;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
