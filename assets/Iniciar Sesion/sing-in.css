@@ -333,7 +333,7 @@ button:hover {
     .forms-container {
         padding: 2rem;
         max-height: 550px;
-        width: 280px
+        width: 270px
     }
     
     .forms-container h1{
@@ -341,7 +341,7 @@ button:hover {
     }
     
     .forms-container p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #burger-logo img {
