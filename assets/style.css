@@ -245,7 +245,7 @@ color: beige;
 /* Menu Burger */
 
 .title-menu{
-    padding-top: 10px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -257,7 +257,6 @@ color: beige;
 }
 
 .div-menu-container{
-    padding-top: 50px;
     display: flex;
     flex-direction: column;
 }
