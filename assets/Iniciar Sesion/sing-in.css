@@ -333,8 +333,7 @@ button:hover {
     .forms-container {
         padding: 2rem;
         max-height: 550px;
-        gap: 15px; 
-        width: auto;
+        width: 280px
     }
     
     .forms-container h1{
