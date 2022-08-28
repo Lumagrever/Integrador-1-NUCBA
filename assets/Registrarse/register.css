@@ -299,7 +299,7 @@ button:hover {
 
   }
 
-  /* Media Queries 960*/
+  /* Media Queries 960 */
 
 @media (max-width: 960px) {
 
@@ -313,7 +313,7 @@ button:hover {
     top: 100px;
     left: 0;
     flex-direction: column;
-    justify-content: center;                    /* Esto es lo que se muestra al desplegar el menú hamburguesa*/
+    justify-content: center;                    /* Esto es lo que se muestra al desplegar el menú hamburguesa */
     align-items: center;
     transform: translateX(-200%);
     transition: 0.4s ease-in-out;
