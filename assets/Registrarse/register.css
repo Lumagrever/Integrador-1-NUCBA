@@ -416,6 +416,11 @@ label[for=slytherin] {
     }
 
     /* Formulario de registro - 576px */
+
+    .main-register {
+        height: 590px;
+        margin-bottom: 25px;
+    }
     
     .forms-container {
         padding: 5rem 0.5rem;
