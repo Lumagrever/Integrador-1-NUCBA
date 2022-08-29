@@ -299,6 +299,10 @@ button:hover {
     font-size: 1rem;
 }
 
+#burger-logo {
+    margin-bottom: 15px;
+}
+
 #burger-logo img {
     height: 120px;
     animation: burger-levitation 4s infinite ease-in-out ;
