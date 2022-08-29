@@ -333,7 +333,9 @@ button:hover {
 }
 
 .main-register{
+    height: 620px;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .register-container {
